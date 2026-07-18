@@ -85,3 +85,8 @@ Durante el desarrollo de esta herramienta, se superaron complejos desafíos téc
 
 ---
 > 🔐 **Nota legal y de privacidad:** *Este repositorio actúa únicamente como un Estudio de Caso Arquitectónico (Tech Showcase). Por motivos de seguridad de la infraestructura, protección de datos (RGPD) y preservación de la propiedad intelectual del algoritmo de categorización, el código fuente del backend comercial (`.json` del flujo en n8n) y los endpoints de API no se distribuyen de forma pública en este espacio. Todos los derechos de arquitectura y lógica reservados © 2026.*
+> 🔐 **Nota del autor sobre la temática del proyecto: *Ante cualquiero juicio desinformado sobre este proyecto quiero dejar claro que:*
+> - Soy estudiante de Ingeniería Informática, no graduado en Contabilidad ni Finanzas.
+> - Toda la información con la que he creado esta arquitectura parte de base de mi capacidad de investigación y conocimientos propios.
+> - Informo de forma preventiva a cualquier interesado que no puedo asegurar el correcto cómputo de las tarjetas de información del informe actual, ni de las gráficas.
+> - Sí que ofrezco mi tiempo y energía, a esos interesados que quieran trabajar conjuntamente para hacer mejor este proyecto, y/o quieran que les facilite su uso, para implementarlo de forma temporal en su empresa/pyme con el objetivo de ser una primera prueba piloto. 
