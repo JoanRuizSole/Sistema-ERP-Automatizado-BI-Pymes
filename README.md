@@ -39,7 +39,7 @@ Actúa como un almacén de datos estructurado y ligero en la nube. Para evitar l
 ---
 
 ### 3. Capa de Analítica, BI y Previsión Fiscal (`Looker Studio`)
-El panel interactivo se ha construido bajo la regla fundamental del Business Intelligence moderno: **"UI/UX Directiva y Cero Mantenimiento"**. En lugar de abrumar al usuario con infografías saturadas, presenta las métricas financieras e impositivas exactas que un gerente necesita para tomar decisiones rápidas y dormir tranquilo al cierre del trimestre.
+El panel interactivo se ha construido bajo la regla fundamental del Business Intelligence moderno: **"UI/UX Directiva y Cero Mantenimiento"**. No se busca abrumar al usuario con infografías saturadas, sino presentar las métricas financieras e impositivas exactas que un gerente necesita para tomar decisiones rápidas y dormir tranquilo al cierre del trimestre.
 
 ![Dashboard de Fiscalidad](images/3_dashboard_fiscalidad.JPG)
 *Módulo fiscal automatizado que calcula las cuotas de IVA trimestral y protege el 25% del beneficio bruto como reserva impositiva.*
