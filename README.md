@@ -35,7 +35,7 @@ El backend del proyecto reemplaza la picadura manual de datos mediante un flujo 
 - **Procesamiento Lógico y Sanitización:** Los bloques lógicos del flujo extraen metadatos clave (CIF/NIF, Cliente/Proveedor, Concepto), calculan las bases imponibles y determinan automáticamente los porcentajes de IVA vigentes según la tipología documental.
 - **Enrutamiento Condicional:** El sistema evalúa el tipo de transacción y la inyecta mediante API en las tablas normalizadas correspondientes, diferenciando ingresos de gastos de forma autónoma.
 
-![Flujo Backend n8n](images/2_flujo_n8n.jpg)
+![Flujo Backend n8n](images/2_flujo_n8n.JPG)
 *Vista general de la arquitectura del flujo lógica y de categorización implementada en el backend con n8n.*
 
 ---
@@ -48,7 +48,7 @@ Actúa como una base de datos ligera, en la nube y optimizada. Para evitar la de
 ### 3. Capa de Analítica, BI y Fiscalidad (`Looker Studio`)
 El panel de visualización interactivo está diseñado bajo una filosofía de **UI/UX Directiva y Cero Mantenimiento**: en lugar de sobrecargar la pantalla con datos irrelevantes, presenta métricas accionables listas para la toma de decisiones financieras y fiscales.
 
-![Dashboard de Fiscalidad](images/3_dashboard_fiscalidad.jpg)
+![Dashboard de Fiscalidad](images/3_dashboard_fiscalidad.JPG)
 *Módulo fiscal automatizado con previsión de cuota de IVA trimestral y cálculo de reserva de liquidez del 25%.*
 
 **Funcionalidades directivas clave:**
@@ -56,7 +56,7 @@ El panel de visualización interactivo está diseñado bajo una filosofía de **
 - **🏆 Ránking Pareto de Clientes (Top Tier):** Gráfico directivo de facturación acumulada que permite identificar al segundo qué clientes concentran la rentabilidad real de la empresa, aislando variaciones estacionales.
 - **📈 Salud Operativa en Tiempo Real:** Seguimiento instantáneo del Beneficio Bruto Anual sin necesidad de cierres contables manuales.
 
-![Ránking de Clientes](images/4_ranking_clientes.jpg)
+![Ránking de Clientes](images/4_ranking_clientes.JPG)
 *Identificación visual en tiempo real del Top Clientes por volumen de facturación.*
 
 ---
