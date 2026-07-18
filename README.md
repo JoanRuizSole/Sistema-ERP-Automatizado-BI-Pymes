@@ -28,7 +28,7 @@ El backend reemplaza a la clásica administrativa digital mediante un flujo de n
 - **Extracción, Limpieza y Sanitización:** Los bloques lógicos analizan el contenido del documento, identifican metadatos clave (CIF/NIF, Cliente/Proveedor, Concepto), aíslan la base imponible y calculan automáticamente la cuota y porcentaje de IVA vigente según la tipología fiscal.
 - **Enrutamiento Condicional Autónomo:** El algoritmo clasifica si el documento representa una entrada de capital o una salida, y lo inyecta directamente mediante API en la tabla contable correspondiente (Ingresos o Gastos).
 
-![Flujo Backend n8n](images/2_flujo_n8n.png)
+![Flujo Backend n8n](images/2_flujo_n8n.JPG)
 *Vista de la arquitectura lógica en n8n: desde la recepción y clasificación automática hasta la inserción en base de datos sin error.*
 
 ---
@@ -41,7 +41,7 @@ Actúa como un almacén de datos estructurado y ligero en la nube. Para evitar l
 ### 3. Capa de Analítica, BI y Previsión Fiscal (`Looker Studio`)
 El panel interactivo se ha construido bajo la regla fundamental del Business Intelligence moderno: **"UI/UX Directiva y Cero Mantenimiento"**. En lugar de abrumar al usuario con infografías saturadas, presenta las métricas financieras e impositivas exactas que un gerente necesita para tomar decisiones rápidas y dormir tranquilo al cierre del trimestre.
 
-![Dashboard de Fiscalidad](images/3_dashboard_fiscalidad.png)
+![Dashboard de Fiscalidad](images/3_dashboard_fiscalidad.JPG)
 *Módulo fiscal automatizado que calcula las cuotas de IVA trimestral y protege el 25% del beneficio bruto como reserva impositiva.*
 
 **Funcionalidades directivas clave:**
@@ -49,7 +49,7 @@ El panel interactivo se ha construido bajo la regla fundamental del Business Int
 - **🏆 Ránking Pareto de Clientes (Top Tier):** Visualización directiva que identifica al instante y con precisión al grupo reducido de clientes que aportan el grueso del volumen de facturación y rentabilidad real del negocio.
 - **📈 Salud Operativa en Tiempo Real:** Seguimiento ininterrumpido del Beneficio Bruto Anual, ingresos totales y gastos acumulados sin necesidad de esperar a cierres contables manuales.
 
-![Ránking de Clientes](images/4_ranking_clientes.png)
+![Ránking de Clientes](images/4_ranking_clientes.JPG)
 *Ránking interactivo de facturación para detectar a los clientes más rentables al instante.*
 
 ---
