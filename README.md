@@ -58,12 +58,14 @@ El panel interactivo se ha construido bajo la regla fundamental del Business Int
 
 Durante el desarrollo de esta herramienta, se superaron complejos desafíos técnicos del modelado analítico de datos:
 
-### 1. Resolución de Asincronía en Fechas mediante *Blended Data*
-**El Reto:** Al cruzar dos fuentes independientes y normalizadas (Ingressos y Despeses) en Looker Studio usando uniones externas (*Full Outer Joins*), la disparidad entre los días de facturación provocaba asincronía en los calendarios. Esto generaba errores como columnas sin gastos asociados ("barras fantasma"), meses vacíos y duplicidades de agregación al mezclar los flujos.
-**La Solución Tecnológica:** Se descartó el cruce habitual por importes monetarios o fechas en crudo. En su lugar, se implementó una normalización temporal estricta mediante campos calculados y transformaciones algebraicas `FORMAT_DATETIME("%Y-%m", Data)` junto a truncamientos de fecha (`DATE_TRUNC`). Al homogeneizar los registros bajo llaves temporales unificadas de *Mes/Año* y *Trimestre*, el motor relacional de Looker Studio ejecuta combinaciones limpias, estables y matemáticamente exactas.
+### 1. Modelado Relacional para Asincronía Temporal en *Blended Data*
+**El Reto:** Al cruzar dos fuentes independientes y normalizadas (Ingresos y Gastos) en Looker Studio usando uniones externas (*Full Outer Joins*), la disparidad en los días exactos de facturación generaba un problema de asincronía. Al intentar combinar por las fechas crudas de la base de datos, el motor creaba vacíos en meses o trimestres donde solo existía un tipo de transacción, provocando el error común de columnas sin gastos asociados ("barras fantasma"), pérdidas de datos y duplicidades de agregación.
+
+**La Solución Tecnológica:** Se descartó el uso de fórmulas de truncamiento dentro de la propia herramienta de visualización por falta de estabilidad en el cruce. En su lugar, se implementó una **estrategia de normalización relacional desde la base y en las capas de modelado de datos**: se crearon llaves primarias artificiales y variables de unión temporales pre-calculadas (como `Mes_Unio` y `Trimestre_Unio`). De este modo, dependiendo de la granularidad requerida en cada módulo del informe (cierre mensual, balance trimestral de IVA o consolidado anual-trimestral), las tablas se enlazan estrictamente a través de sus claves temporales equivalentes, garantizando una unión relacional matemáticamente exacta y sin pérdida de registros.
 
 ### 2. Optimización Ejecutiva: Hacia el "Cero Mantenimiento"
 **El Reto:** Los tradicionales gráficos evolutivos mes a mes que dependen de múltiples fuentes combinadas suelen sufrir caídas visuales o requerir ajustes de mantenimiento constantes cuando un negocio atraviesa periodos vacíos sin transacciones en una categoría.
+
 **La Solución Tecnológica:** Se aplicó una refactorización hacia una interfaz ejecutiva de alta resiliencia. Se eliminaron las comparativas temporales propensas a roturas estructurales en favor de tarjetas KPI de impacto inmediato (Previsión Fiscal del 25%) y gráficos de agregación por entidades (Top Clientes). Esto garantiza que el cuadro de mando mantenga una disponibilidad visual y operativa del 100% los 365 días del año sin requerir intervención de soporte técnico.
 
 ---
