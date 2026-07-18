@@ -34,7 +34,7 @@ El backend reemplaza a la clásica administrativa digital mediante un flujo de n
 ---
 
 ### 2. Capa de Almacenamiento Relacional en la Nube (`Google Sheets`)
-Actúa como un almacén de datos estructurado y ligero en la nube. Para evitar la lentitud y degradación de rendimiento típica de hojas de cálculo saturadas, la base de datos se ha diseñado bajo un modelo relacional normalizado, dividiendo los registros en tablas separadas (`📈 BASE - INGRESSOS` y `📊 BASE - DESPESES`). Estas tablas son alimentadas de manera exclusiva por el backend automatizado, manteniendo las celdas protegidas del error de edición humana.
+Actúa como un almacén de datos estructurado y ligero en la nube. Para evitar la lentitud y degradación de rendimiento típica de hojas de cálculo saturadas, la base de datos se ha diseñado bajo un modelo relacional normalizado, dividiendo los registros en tablas separadas (`📈 BASE - INGRESSOS` y `📊 BASE - DESPESES`). Estas tablas son alimentadas de manera automática por el flujo de n8n, aunque también pueden introducirse manualmente datos en el 'Google Sheets'.
 
 ---
 
