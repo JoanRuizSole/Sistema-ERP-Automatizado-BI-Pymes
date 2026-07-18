@@ -50,7 +50,7 @@ El panel interactivo se ha construido bajo la regla fundamental del Business Int
 - **📈 Salud Operativa en Tiempo Real:** Seguimiento ininterrumpido del Beneficio Bruto Anual, ingresos totales y gastos acumulados sin necesidad de esperar a cierres contables manuales.
 
 ![Ránking de Clientes](images/4_ranking_clientes.JPG)
-*Ránking interactivo de facturación para detectar a los clientes más rentables al instante.*
+*Ránking interactivo de facturación para detectar a los clientes más rentables al instante, la fracción de facturación por categorías, y el registro de facturas resumido.*
 
 ---
 
